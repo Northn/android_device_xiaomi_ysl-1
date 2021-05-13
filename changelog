@@ -1,0 +1,96 @@
+Initial Project-Fluid OFFICIAL for Redmi S2/Y2 (ysl), 13.05.2021:
+
+Main changelog:
+* May security patch
+* Using Pixel Offline charging animation
+* Fixed Offline charging animation
+* Switched to stockish (perf) kernel
+* Kernel upstream to 4.9.262
+* Enabled iorapd
+* Increased apps boot speed (expecting for 30%)
+* Disabled WLAN firmware loggings
+* Fixed SELinux Neverallows
+* Fixed some overlays properties
+* Fixed headphone volume buttons in call
+
+Commits log:
+* Optimize Pixel Charging
+* Use Pixel offline charging animation
+* Address iorap_prefetcherd denials
+* Re-enable iorapd
+* Disable WLAN Firmware loggings
+* Drop non-functional soundtrigger
+* Tweaks for better RAM management
+* Enable QPower and Deep Sleep at the same time
+* Configure SQLite to operate in MEMORY mode
+* Tune zram Performance
+* Add custom init to set device properties
+* Remove some prebuilt apps
+* Add rounded corners
+* Fix keylayout for earphones jack
+* Add vendor prefix to ctl_vendor_imsrcsservice_prop
+* Add vendor prefix to qcom_ims_prop
+* Fix keylayout for earphones jack
+* Exclude CPUs 0-3 from isolation
+* Ensure SLAB_STORE_USER is disabled for zram kmem_caches
+* Update nodes of read_ahead_kb configs
+* Include VINTF fragment
+* Explicitly add needed camera libs for IMS
+* Don't advertise YUV/PRIVATE reprocessing capabilities
+* Saner workaround for dark preview issue
+* Update AF state in UrgentMetadata
+* Increase ZRAM size to 1GB
+* Set voice call volume steps to 6
+* Set default IIR volume to 53 for internal codec
+* Move to Vendor
+* Bump Vendor SPL to match LA.UM.9.6.2.r1-03600-89xx.0 blobs
+* Remove Telecomm overlays
+* Update Auto Brightness Overlays
+* Update power profile for P
+* Update power profile to match framework change
+* Drop esepowermanager & IOP stack
+* Set property to disable adsprpcd_sensorspd service
+* Add 48khz sampling rate to spkr prot tx
+* Regen Thermal config
+* Cleanup props
+* Cleanup unused libs
+* Build missing sensorservice 1.0 hal
+* Build a vendor copy of libjson
+* Remove BOARD_PROPERTY_OVERRIDES_SPLIT_ENABLED
+* Clean up dead targets
+* Remove unnecessary android.hardware.radio entries
+* Remove android.hardware.graphics.composer@2.1-impl
+* Remove deprecated telephony flag
+* Deduplicate handheld_core_hardware.xml copy rule
+* Move DPM feature property to /system_ext
+* Set zygote preforking in system_prop
+* Address rild denial
+* Fix radio denials
+* Add swapper to kill.
+* Enable QCOM IOP
+* Remove Custom Volte Icon
+* Hardcode the path for blobs
+* Update deps
+* Silence all ims dpl related logspam
+* Silence excessive logs
+* Drop Force enable mobile network settings v2
+* Fix never allows
+* Init deps
+* Sepol cleanup, again
+* Import missing perf blobs
+* Rename camera property
+* Removing unused setprop persist.camera.gyro.disable
+* Update Camera Props
+* Enable config_sf_limitedAlpha
+* Fix padding issue in livesnapshot - 480p_HFR60 & restart device in 1080P_HFR60
+* Improve ZSL/HDR processing
+* Fix fdleak issue
+* Add qmi_fw.conf
+* Convert Internal BTSCO SampleRate to readable  values
+* Remove deprecated code for avc denial error cleanup
+* Fixup sepolicys
+* Switch to source built vendor.qti.hardware.perf
+* Build some libs from source
+* Add goodix fingerprint keylayout
+* Resolve storaged denials
+* Address and cleanup denials
